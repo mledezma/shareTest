@@ -8,5 +8,5 @@ $(window).on('load', function () {
         }
     });
     $('#fbShare').attr('href', 'https://www.facebook.com/sharer/sharer.php?u='+url);
-    $('#tweetShare').attr('href', 'https://twitter.com/share?text=' + description + ' ');
+    $('#tweetShare').attr('href', 'https://twitter.com/share?text='+url);
 });
