@@ -10,8 +10,10 @@ $(window).on('load', function () {
     $('#facebookShare').click(function() {
         $(this).attr('href', 'https://www.facebook.com/sharer/sharer.php?u=' + url);
     })
-    //$('#fbShare').attr('href', 'https://www.facebook.com/sharer/sharer.php?u='+url);
     $('#tweetShare').click(function () {
         $(this).attr('href', 'https://twitter.com/share?text=' + url);
     })
+    $('#mailShare').click(function() {
+        $(this).attr('href', 'mailto:manish@simplygraphix.com?subject=Feedback for webdevelopersnotes.com & body=The Tips and Tricks section is great');
+    });
 });
