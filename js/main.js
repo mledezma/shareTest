@@ -7,6 +7,11 @@ $(window).on('load', function () {
             description = $(this).attr('content');
         }
     });
-    $('#fbShare').attr('href', 'https://www.facebook.com/sharer/sharer.php?u='+url);
-    $('#tweetShare').attr('href', 'https://twitter.com/share?text='+url);
+    $('#facebookShare').click(function() {
+        $(this).attr('href', 'https://www.facebook.com/sharer/sharer.php?u=' + url);
+    })
+    //$('#fbShare').attr('href', 'https://www.facebook.com/sharer/sharer.php?u='+url);
+    $('#tweetShare').click(function () {
+        $(this).attr('href', 'https://twitter.com/share?text=' + url);
+    })
 });
